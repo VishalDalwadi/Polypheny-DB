@@ -22,8 +22,8 @@ operation ( Joins or Set Operations ) on tables.
 
 ### Basics
 
-Polypheny, currently, executes CQL query on its [REST interface](https://github.com/polypheny/Polypheny-DB/tree/master/rest-interface)
-at route `GET /restapi/v1/cql`. The handler assumes the entire body to be the CQL query.
+Polypheny executes CQL queries on its **CQL Interface** at route `POST /`.
+The default port for the interface is **8087**. The handler assumes the entire body to be the CQL query.
 
 Polypheny's CQL implementation makes some changes and adds many extensions to the [CQL Specification](https://www.loc.gov/standards/sru/cql/spec.html).
 It does not have prefix assignments or search-term-only filters. It also introduces some more keywords to add
