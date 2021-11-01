@@ -127,8 +127,8 @@ used to modify its execution. The two modifiers currently supported are: `null` 
 tables. Possible values of `on` modifier are: `all` (finds the common columns between two tables; Default for AND),
 `none` (Default for OR), comma-separated list of column names (for example, 'name,id').
   
-- `Sort Specification`: Sort specification is used to specify a space separate column list on which to sort the query
-output.
+- `Sort Specification`: Sort specification is used to specify a space separated column list on which to sort the query
+  output. These columns must be projected if a projection clause is specified.
 
 - `Projection`: Projection is used to specify the columns for the result. It is also used for aggregations and grouping.
 
